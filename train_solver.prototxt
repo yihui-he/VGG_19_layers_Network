@@ -1,4 +1,4 @@
-net: "models/vgg16/VGG_19_layers_prelu_train.prototxt"
+net: "VGG_19_layers_prelu_train_val.prototxt"
 test_iter: 1000
 test_interval: 4000
 test_initialization: false
@@ -12,5 +12,5 @@ max_iter: 10000000
 momentum: 0.9
 weight_decay: 0.0001
 snapshot: 40000
-snapshot_prefix: "models/vgg16/VGG19_layers_prelu"
+snapshot_prefix: "vgg16/VGG19_layers_prelu"
 solver_mode: GPU

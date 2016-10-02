@@ -15,12 +15,12 @@ layer {
   }
  transform_param {
     crop_size: 224
-    mean_file: "path/to/mean.binaryproto"
+    mean_file: "/home/heyihui/heyihui-local/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
     mirror: true
  }
  data_param {
-    source: "path/to/train_lmdb"
-    batch_size: 64
+    source: "/home/heyihui-local/imagenet/ilsvrc12_train_lmdb"
+    batch_size: 32
     backend: LMDB
   }
 }
@@ -34,12 +34,12 @@ layer {
   }
  transform_param {
     crop_size: 224
-    mean_file: "path/to/mean.binaryproto"
+    mean_file: "/home/heyihui/heyihui-local/caffe/data/ilsvrc12/imagenet_mean.binaryproto"
     mirror: false
  }
  data_param {
-    source: "path/to/val_lmdb"
-    batch_size: 50
+    source: "/home/heyihui-local/imagenet/ilsvrc12_val_lmdb"
+    batch_size: 32
     backend: LMDB
   }
 }
