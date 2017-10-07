@@ -1,0 +1,16 @@
+net: "finetune.prototxt"
+test_iter: 5000
+test_interval: 40000
+test_initialization: true
+snapshot: 40000
+snapshot_prefix: "models/fine"
+display: 40
+average_loss: 1000
+base_lr: 0.0001
+lr_policy: "step"
+max_iter: 100000
+momentum: 0.9
+weight_decay: 0.0001
+solver_mode: GPU
+stepsize: 320000
+gamma: 0.96
